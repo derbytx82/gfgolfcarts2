@@ -1,0 +1,8 @@
+# GF Custom Golf Carts - robots.txt
+User-agent: *
+Allow: /
+Disallow: /golfpanel/
+Disallow: /golfpanel/*
+Disallow: /update-password
+
+Sitemap: https://gfcustomgolfcarts.com/sitemap.xml
