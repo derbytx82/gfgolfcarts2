@@ -73,13 +73,13 @@ export function AdminOverviewPage() {
       <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
         <h2 className="font-display text-xl text-white">Quick Actions</h2>
         <div className="mt-4 flex flex-wrap gap-3">
-          <Link to="/admin/products/new">
+          <Link to="/golfpanel/products/new">
             <Button>Add Product</Button>
           </Link>
-          <Link to="/admin/content">
+          <Link to="/golfpanel/content">
             <Button variant="secondary">Edit Content</Button>
           </Link>
-          <Link to="/admin/settings">
+          <Link to="/golfpanel/settings">
             <Button variant="secondary">
               <Settings size={16} className="mr-2" />
               Site Settings

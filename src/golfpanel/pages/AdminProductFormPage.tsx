@@ -233,7 +233,7 @@ export function AdminProductFormPage() {
         await removeImageByPublicUrl(url, STORAGE_BUCKETS.products)
       }
 
-      navigate('/admin/products')
+      navigate('/golfpanel/products')
     } catch (requestError) {
       setError(requestError instanceof Error ? requestError.message : 'Unable to save product')
     } finally {
@@ -252,7 +252,7 @@ export function AdminProductFormPage() {
           <p className="text-xs uppercase tracking-[0.18em] text-accent-gold">Admin / Products</p>
           <h1 className="font-display text-3xl text-white">{isEdit ? 'Edit Product' : 'New Product'}</h1>
         </div>
-        <Link to="/admin/products">
+        <Link to="/golfpanel/products">
           <Button variant="secondary">Back</Button>
         </Link>
       </div>
@@ -404,7 +404,7 @@ export function AdminProductFormPage() {
             <Save size={16} className="mr-2" />
             {saving ? 'Saving...' : 'Save Product'}
           </Button>
-          <Link to="/admin/products">
+          <Link to="/golfpanel/products">
             <Button variant="secondary" size="lg">
               Cancel
             </Button>

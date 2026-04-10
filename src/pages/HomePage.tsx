@@ -116,7 +116,7 @@ export function HomePage() {
                   <Button size="lg">{contentMap.hero.cta_text ?? 'Shop Carts'}</Button>
                 </Link>
                 <Link to="/inventory">
-                  <Button size="lg" variant="secondary" className="text-white">
+                  <Button size="lg" variant="secondary">
                     {t.home.viewInventory}
                   </Button>
                 </Link>
@@ -276,7 +276,7 @@ export function HomePage() {
               <Button size="lg">{t.home.finalPrimary}</Button>
             </Link>
             <Link to="/inventory">
-              <Button variant="secondary" size="lg" className="text-white">
+              <Button variant="secondary" size="lg">
                 {t.home.finalSecondary}
               </Button>
             </Link>

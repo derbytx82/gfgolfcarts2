@@ -60,7 +60,7 @@ export function AdminProductsPage() {
           <p className="text-xs uppercase tracking-[0.16em] text-accent-gold">Admin</p>
           <h1 className="font-display text-3xl text-white">Products</h1>
         </div>
-        <Link to="/admin/products/new">
+        <Link to="/golfpanel/products/new">
           <Button>
             <Plus size={16} className="mr-2" />
             New Product
@@ -75,7 +75,7 @@ export function AdminProductsPage() {
           title="No products yet"
           description="Create your first inventory item."
           actionLabel="Create Product"
-          actionTo="/admin/products/new"
+          actionTo="/golfpanel/products/new"
         />
       ) : (
         <div className="grid gap-3">
@@ -102,7 +102,7 @@ export function AdminProductsPage() {
                     <CircleCheck size={14} className="mr-1" />
                     {product.available ? 'Mark Unavailable' : 'Mark Available'}
                   </Button>
-                  <Link to={`/admin/products/${product.id}/edit`}>
+                  <Link to={`/golfpanel/products/${product.id}/edit`}>
                     <Button variant="secondary" size="sm">
                       <Pencil size={14} className="mr-1" />
                       Edit
